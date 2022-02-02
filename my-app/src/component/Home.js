@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 import GoToLocation from './LocationButton';
 
 
@@ -35,7 +34,12 @@ import GoToLocation from './LocationButton';
               influence you.</p>
           </article>
         </div>
-        <Footer />
+        <section className="homepage__footer">
+        <h3 className='homepage__footer-heading'>Modern Art Gallery</h3>
+        <p> The Modern Art Gallery is free to all visitors and open seven days a week 
+          from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+      </section>
       </section>
     )
   }

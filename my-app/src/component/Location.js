@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 import GoToHomePage from './HomeButton';
 
 const Location = () => {
@@ -20,8 +19,13 @@ const Location = () => {
                 a week from 8am to 9pm.</p>
           </div>
         </article>
-      </div> 
-      <Footer />
+      </div>
+      <section className="location__footer">
+        <h3 className='location__footer-heading'>Modern Art Gallery</h3>
+        <p> The Modern Art Gallery is free to all visitors and open seven days a week 
+          from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+      </section>
     </section>  
   )
 }

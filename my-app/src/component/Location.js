@@ -1,15 +1,11 @@
 import React from 'react';
 import Footer from './Footer';
+import GoToHomePage from './HomeButton';
 
 const Location = () => {
   return (
     <section className='location'>
-      <a href='fwf'>
-        <div className='location__icon'>
-          <svg className='location__svg' width="10" height="24" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFF" fill="none" d="M9 24 1 12 9 0"/></svg>  
-        </div>
-        <button className='location__button'>Back to home</button>
-      </a>
+      <GoToHomePage />
       <div class="location__image"></div>
       <div className="location__content">
         <article className='location__content-first'>

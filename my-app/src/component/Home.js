@@ -1,7 +1,10 @@
 import React from 'react';
 import Footer from './Footer';
+import GoToLocation from './LocationButton';
+
 
   const Home = () => {
+
     return (
       <section className='homepage'>
         <div className="homepage__hero">
@@ -12,12 +15,9 @@ import Footer from './Footer';
               from a spark of inspiration. Will these pieces inspire you? Visit 
               us and find out.
             </p>
-            <a href='ttt'>
-              <button className='homepage__hero-button'>Our location</button>
-              <div className='homepage__hero-icon'>
-                <svg className='homepage__hero-svg' width="10" height="24" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFF" fill="none" d="m1 0 8 12-8 12"/></svg>  
-              </div>
-            </a>
+            <div>
+              <GoToLocation />
+            </div>
           </div>
         </div>
         <div className="homepage__content">

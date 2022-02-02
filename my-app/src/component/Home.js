@@ -1,14 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
-import { useNavigate } from "react-router-dom";
 
-class Home extends React.Component {
-  // let navigate = useNavigate();
-  // function handleClick() {
-  //   navigate('/location')
-  // }
-
-  render() {
+  const Home = () => {
     return (
       <section className='homepage'>
         <div className="homepage__hero">
@@ -44,9 +37,7 @@ class Home extends React.Component {
         </div>
         <Footer />
       </section>
-      
     )
   }
-}
 
 export default Home

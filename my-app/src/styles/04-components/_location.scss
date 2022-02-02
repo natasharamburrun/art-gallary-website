@@ -1,0 +1,45 @@
+.location {
+
+    &__content {
+      padding: 48px 16px;
+      background-color: $base-color-black;
+      color: $base-color-white;
+    }
+  
+    &__icon {
+      background-color: $base-color-nude;
+      display: inline !important;
+      position: absolute; 
+      width: 56px;
+      height: 72px;
+      z-index: 999;
+    }
+  
+    &__button {
+      position: absolute;
+      right: 85px;
+      z-index: 999;
+    }
+  
+    &__svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    &__image {
+      height: 480px;
+      width: 100%;
+      background-image: url("../../assets/mobile/image-map.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+  
+    &__street {
+      color: $base-color-nude;
+      padding-top: 48px;
+    }
+  }

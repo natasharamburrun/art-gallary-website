@@ -1,0 +1,63 @@
+.homepage {
+    &__hero-image {
+      height: 240px;
+      width: 100%;
+      background-image: url("../../assets/mobile/image-hero.jpg");
+    }
+  
+    &__hero-banner {
+      padding: 0 16px;
+      margin: 32px 0;
+    }
+  
+    &__hero-icon {
+      background-color: $base-color-nude;
+      display: inline !important;
+      position: absolute; 
+      width: 56px;
+      height: 72px;
+    }
+  
+    &__hero-svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    &__content {
+      padding: 0 16px;
+      margin: 120px 0;
+    }
+  
+    &__content-image1 {
+      height: 320px;
+      width: 100%;
+      background-image: url("../../assets/mobile/image-grid-1.jpg");
+      margin-bottom: 25px;
+    }
+  
+    &__content-image2 {
+      height: 480px;
+      width: 100%;
+      background-image: url("../../assets/mobile/image-grid-2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin-bottom: 25px;
+    }
+  
+    &__content-image3 {
+      height: 200px;
+      width: 100%;
+      background-image: url("../../assets/mobile/image-grid-3.jpg");
+      margin-bottom: 25px;
+    }
+  
+    &__content-second {
+      background-color: $base-color-black;
+      color: $base-color-white;
+      padding: 48px 24px;
+    }
+  }

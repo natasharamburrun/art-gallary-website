@@ -10,11 +10,11 @@ import GoToLocation from './LocationButton';
           <div className="homepage__hero-image"></div>
           <div className="homepage__hero-banner">
             <h1 className='homepage__hero-heading'> Modern Art Gallery</h1>
-            <p className='homepage__hero-sub-text'> The arts in the collection of the Modern Art Gallery all started 
-              from a spark of inspiration. Will these pieces inspire you? Visit 
-              us and find out.
-            </p>
-            <div>
+            <div className='homepage__hero-text-button'>
+              <p className='homepage__hero-sub-text'> The arts in the collection of the Modern Art Gallery all started 
+                from a spark of inspiration. Will these pieces inspire you? Visit 
+                us and find out.
+              </p>
               <GoToLocation />
             </div>
           </div>

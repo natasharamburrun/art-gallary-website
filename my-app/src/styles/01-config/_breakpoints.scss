@@ -13,3 +13,7 @@ $container-max-widths: (
   'xl': 960px,
   'xxl': 1140px,
 );
+
+@mixin breakpoint($breakpoint) {
+  @media (min-width: map-get($map: $breakpoints, $key: $breakpoint)) { @content; }
+}

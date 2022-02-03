@@ -20,12 +20,12 @@ const Location = () => {
           </div>
         </article>
       </div>
-      <section className="location__footer">
+      <footer className="location__footer">
         <h3 className='location__footer-heading'>Modern Art Gallery</h3>
         <p> The Modern Art Gallery is free to all visitors and open seven days a week 
           from 8am to 9pm. Find us at 99 King Street, Newport, USA.
         </p>
-      </section>
+      </footer>
     </section>  
   )
 }

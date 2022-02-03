@@ -1,40 +1,73 @@
 .homepage {
-    &__hero-image {
-      height: 240px;
-      width: 100%;
-      background-image: url("../../assets/mobile/image-hero.jpg");
+  &__hero-image {
+    height: 240px;
+    width: 100%;
+    background-image: url("../../assets/mobile/image-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include breakpoint(md) {
+      height: 700px;
+      max-width: 437px;  
+      background-image: url("../../assets/tablet/image-hero.jpg")
     }
-  
-    &__hero-banner {
-      padding: 0 16px;
-      margin: 32px 0;
+  }
+
+  &__hero {
+    @include breakpoint(md) {
+      display: flex;
     }
+  }
   
-    &__hero-icon {
-      background-color: $base-color-nude;
-      display: inline !important;
-      position: absolute; 
-      width: 56px;
-      height: 72px;
-    }
-  
-    &__hero-svg {
+  &__hero-banner {
+    padding: 0 16px;
+    margin: 32px 0;
+
+    @include breakpoint(md) {
       position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      max-width: 400px;
+      top: 155px;
+      right: 15px;
     }
+  }
+
+  &__hero-icon {
+    background-color: $base-color-nude;
+    display: inline !important;
+    position: absolute; 
+    width: 56px;
+    height: 72px;
+  }
   
-    &__content {
-      padding: 0 16px;
-      margin: 120px 0;
-    }
+  &__hero-svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &__content {
+    padding: 0 16px;
+    margin: 80px 0;
+  }
   
     &__content-image1 {
       height: 320px;
       width: 100%;
       background-image: url("../../assets/mobile/image-grid-1.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
       margin-bottom: 25px;
+
+      @include breakpoint(md) {
+        height: 398px;
+        width: 400px;
+        background-image: url("../../assets/tablet/image-grid-1.jpg");
+      }
     }
   
     &__content-image2 {
@@ -46,24 +79,75 @@
       background-size: cover;
       position: relative;
       margin-bottom: 25px;
+
+      @include breakpoint(md) {
+        height: 720px;
+        width: 398px;
+        background-image: url("../../assets/tablet/image-grid-2.jpg");
+        grid-area: b;
+      }
     }
   
     &__content-image3 {
       height: 200px;
       width: 100%;
       background-image: url("../../assets/mobile/image-grid-3.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
       margin-bottom: 25px;
+
+      @include breakpoint(md) {
+        height: 313px;
+        background-image: url("../../assets/tablet/image-grid-3.jpg");
+        grid-area: a;
+      }
+    }
+
+    &__block1 {
+      @include breakpoint(md) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 12px;     
+      }
+    }
+
+    &__content-info1 {
+      @include breakpoint(md) {
+        max-width: 223px;
+      }
     }
   
-    &__content-second {
+    &__content-info2 {
       background-color: $base-color-black;
       color: $base-color-white;
       padding: 48px 24px;
+
+      @include breakpoint(md) {
+        max-height: 396px;
+        grid-area: c;
+      }
     }
 
     &__footer {
       background-color: $base-color-black;
       color: $base-color-white;
       padding: 48px 32px;
-    }  
+    }
+
+    &__block2 {
+      @include breakpoint(md) {
+        display: grid;
+        grid-gap: 12px;
+        width: 100%;
+        grid-template-areas: 
+        "b b a"
+        "b b c"
+        "b b c";
+        grid-template-rows: 312px 1fr;
+        grid-template-columns: 150px 1fr;
+      }
+    }
   }

@@ -20,26 +20,32 @@ import GoToLocation from './LocationButton';
           </div>
         </div>
         <div className="homepage__content">
-          <article className='homepage__content-first'>
+          <article className="homepage__block1">
             <div className="homepage__content-image1"></div>
-            <h2 className='homepage__sub-heading'>Your day at the gallery</h2>
-            <p> Wander through our distinct collections and find new insights about 
-              our artists. Dive into the details of their creative process.</p>
+            <div className='homepage__content-info1'>
+              <h2 className='homepage__content-sub-heading'>Your day at the gallery</h2>
+              <p className='homepage__content-text'> Wander through our distinct collections and find new insights about 
+                our artists. Dive into the details of their creative process.</p>
+            </div>
+          </article>
+          <article className="homepage__block2">
             <div className="homepage__content-image2"></div>
             <div className="homepage__content-image3"></div>
+            <div className='homepage__content-info2'>
+              <h2 className='homepage__content-sub-heading'>Come &amp; be inspired</h2>  
+              <p className='homepage__content-text'> We’re excited to welcome you to our gallery and see how our collections 
+                influence you.</p>
+            </div>
           </article>
-          <article className='homepage__content-second'>
-            <h2 className='homepage__sub-heading'>Come &amp; be inspired</h2>  
-            <p> We’re excited to welcome you to our gallery and see how our collections 
-              influence you.</p>
-          </article>
-        </div>
-        <section className="homepage__footer">
-        <h3 className='homepage__footer-heading'>Modern Art Gallery</h3>
-        <p> The Modern Art Gallery is free to all visitors and open seven days a week 
-          from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-        </p>
-      </section>
+          </div>
+          <footer>
+            <div className="homepage__footer">
+              <h3 className='homepage__footer-heading'>Modern Art Gallery</h3>
+              <p> The Modern Art Gallery is free to all visitors and open seven days a week 
+                from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+              </p>
+            </div>
+          </footer>
       </section>
     )
   }

@@ -195,6 +195,20 @@
     }
   }
 
+  &__block2 {
+    @include breakpoint(lg) {
+      display: grid;
+      grid-gap: 12px;
+      width: 100%;
+      grid-template-areas: 
+      "b b a"
+      "b b c"
+      "b b c";
+      grid-template-rows: 312px 1fr;
+      grid-template-columns: 150px 1fr;
+    }
+  }
+
   &__content-info1 {
     @include breakpoint(lg) {
       max-width: 223px;
@@ -250,19 +264,5 @@
 
   &__icon {
     margin-right: 15px;
-  }
-
-  &__block2 {
-    @include breakpoint(lg) {
-      display: grid;
-      grid-gap: 12px;
-      width: 100%;
-      grid-template-areas: 
-      "b b a"
-      "b b c"
-      "b b c";
-      grid-template-rows: 312px 1fr;
-      grid-template-columns: 150px 1fr;
-    }
   }
 }

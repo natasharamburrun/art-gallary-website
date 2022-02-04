@@ -3,6 +3,9 @@
     padding: 48px 16px;
     background-color: $base-color-black;
     color: $base-color-white;
+    @include breakpoint(lg) {
+      display: flex;
+    }  
   }
 
   &__icon {
@@ -18,6 +21,25 @@
     position: absolute;
     z-index: 999;
     padding-left: 72px;
+  }
+
+  &__btn {
+    @include breakpoint(xl) {
+      position: absolute;
+      left: 50px;
+    }
+  }
+
+  &__sub-heading {
+    @include breakpoint(lg) {
+      margin: 60px;
+    }
+  }
+
+  &__address {
+    @include breakpoint(lg) {
+    padding: 60px 20px 0 120px;
+   }
   }
   
   &__svg {
@@ -35,22 +57,61 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    @include breakpoint(lg) {
+      background-image: url("../../assets/tablet/image-map.png");
+     } 
+
+    @include breakpoint(xl) {
+      background-image: url("../../assets/desktop/image-map.png");
+     }  
   }
   
   &__street {
     color: $base-color-nude;
     padding-top: 48px;
+
+    @include breakpoint(lg) {
+     padding: 0;
+    }  
   }
 
   &__footer {
     background-color: $base-color-nude;
     color: $base-color-black;
     padding: 48px 32px;
+
+    @include breakpoint(lg) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }  
+
+    @include breakpoint(lg) {
+      justify-content: space-around;
+    } 
   }
-  
-  // &__socials {
-  //   max-width: 100px;
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
+
+  &__footer p {
+    @include breakpoint(lg) {
+      padding: 0;
+      max-width: 281px;
+    }
+  }
+
+  &__footer-heading {
+    max-width: 80px;
+  }
+
+  &__socials {
+    @include breakpoint(lg) {
+    display: flex;
+    margin-left: 5px;
+    }
+  }
+
+  &__social-icon {
+    margin-right: 15px;
+    fill: $base-color-black;
+  }
 }

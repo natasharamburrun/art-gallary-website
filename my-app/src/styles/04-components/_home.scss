@@ -15,7 +15,7 @@
     }
 
     @include breakpoint(xl) {
-      height: 700px;
+      height: 800px;
       max-width: 437px;
       background-image: url("../../assets/desktop/image-hero.jpg");
       left: 324px;
@@ -35,10 +35,12 @@
       position: absolute;
       top: 0;
       right: 700px;
-      bottom: -244px;
+      bottom: 0;
       left: 0;
       background-color: black;
       z-index: 0;
+      min-height: 799px;
+      max-height: 800px;
     }
   }
 
@@ -56,6 +58,14 @@
     @include breakpoint(xl) {
       right: 155px;
       display: flex;
+    }
+  }
+
+  &__hero-title {
+    @include breakpoint(xl) {
+      color: #fff;
+      mix-blend-mode: difference;
+      z-index: 1;
     }
   }
 
@@ -77,10 +87,16 @@
   &__hero-heading {
       @include breakpoint(xl) {
       position: absolute;
-      left: -335px;
+      left: -395px;
       max-width: 283px;
     }
   }
+
+  &__hero-heading::before {
+    @include breakpoint(xl) {
+     color: brown;
+  }
+}
 
   &__hero-sub-text {
     @include breakpoint(xl) {
@@ -92,6 +108,7 @@
     @include breakpoint(xl) {
       position: relative;
       left: 150px;
+      max-width: 350px;
     }
   }
   

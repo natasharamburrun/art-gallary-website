@@ -59,6 +59,10 @@
       right: 155px;
       display: flex;
     }
+
+    @include breakpoint(xxl) {
+      right: 299px;
+    }
   }
 
   &__hero-title {
@@ -87,7 +91,7 @@
   &__hero-heading {
       @include breakpoint(xl) {
       position: absolute;
-      left: -395px;
+      left: -398px;
       max-width: 283px;
     }
   }
@@ -113,8 +117,15 @@
   }
   
   &__content {
-    padding: 0 16px;
+    padding: 0 65px;
     margin: 80px 0;
+
+    @include breakpoint(xl) {
+      padding: 0 80px;
+    }
+    @include breakpoint(xxl) {
+      padding: 0 250px;
+    }
   }
   
     &__content-image1 {
@@ -178,9 +189,13 @@
       @include breakpoint(md) {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
-        padding: 12px;     
+        justify-content: space-between;
       }
+
+      // @include breakpoint(xl) {
+      //   justify-content: space-between;
+      //   padding: 25px 85px;
+      // }
     }
 
     &__content-info1 {

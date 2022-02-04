@@ -8,7 +8,7 @@
     background-size: cover;
     position: relative;
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       height: 700px;
       max-width: 437px;  
       background-image: url("../../assets/tablet/image-hero.jpg");
@@ -16,7 +16,7 @@
 
     @include breakpoint(xl) {
       height: 800px;
-      max-width: 437px;
+      max-width: 540px;
       background-image: url("../../assets/desktop/image-hero.jpg");
       left: 324px;
     }
@@ -48,7 +48,7 @@
     padding: 0 16px;
     margin: 32px 0;
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       position: absolute;
       max-width: 400px;
       top: 155px;
@@ -91,16 +91,12 @@
   &__hero-heading {
       @include breakpoint(xl) {
       position: absolute;
-      left: -398px;
-      max-width: 283px;
+      right: 644px;
+      max-width: 451px;
+      font-size: 96px;
+      line-height: 88px;
     }
   }
-
-  &__hero-heading::before {
-    @include breakpoint(xl) {
-     color: brown;
-  }
-}
 
   &__hero-sub-text {
     @include breakpoint(xl) {
@@ -117,121 +113,156 @@
   }
   
   &__content {
-    padding: 0 65px;
+    padding: 0 16px;
     margin: 80px 0;
+
+    @include breakpoint(md) {
+      padding: 0 65px;
+    }
 
     @include breakpoint(xl) {
       padding: 0 80px;
     }
     @include breakpoint(xxl) {
-      padding: 0 250px;
+      padding: 0 190px;
     }
   }
   
-    &__content-image1 {
-      height: 320px;
-      width: 100%;
-      background-image: url("../../assets/mobile/image-grid-1.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      margin-bottom: 25px;
+  &__content-image1 {
+    height: 320px;
+    width: 100%;
+    background-image: url("../../assets/mobile/image-grid-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 25px;
 
-      @include breakpoint(md) {
-        height: 398px;
-        width: 400px;
-        background-image: url("../../assets/tablet/image-grid-1.jpg");
-      }
-
-      @include breakpoint(xl) {
-        height: 400px;
-        width: 635px;
-      }
+    @include breakpoint(lg) {
+      height: 398px;
+      width: 400px;
+      background-image: url("../../assets/tablet/image-grid-1.jpg");
     }
-  
-    &__content-image2 {
-      height: 480px;
-      width: 100%;
-      background-image: url("../../assets/mobile/image-grid-2.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      margin-bottom: 25px;
-
-      @include breakpoint(md) {
-        height: 720px;
-        width: 398px;
-        background-image: url("../../assets/tablet/image-grid-2.jpg");
-        grid-area: b;
-      }
-    }
-  
-    &__content-image3 {
-      height: 200px;
-      width: 100%;
-      background-image: url("../../assets/mobile/image-grid-3.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      margin-bottom: 25px;
-
-      @include breakpoint(md) {
-        height: 313px;
-        background-image: url("../../assets/tablet/image-grid-3.jpg");
-        grid-area: a;
-      }
-    }
-
-    &__block1 {
-      @include breakpoint(md) {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-      }
-
-      // @include breakpoint(xl) {
-      //   justify-content: space-between;
-      //   padding: 25px 85px;
-      // }
-    }
-
-    &__content-info1 {
-      @include breakpoint(md) {
-        max-width: 223px;
-      }
-    }
-  
-    &__content-info2 {
-      background-color: $base-color-black;
-      color: $base-color-white;
-      padding: 48px 24px;
-
-      @include breakpoint(md) {
-        max-height: 396px;
-        grid-area: c;
-      }
-    }
-
-    &__footer {
-      background-color: $base-color-black;
-      color: $base-color-white;
-      padding: 48px 32px;
-    }
-
-    &__block2 {
-      @include breakpoint(md) {
-        display: grid;
-        grid-gap: 12px;
-        width: 100%;
-        grid-template-areas: 
-        "b b a"
-        "b b c"
-        "b b c";
-        grid-template-rows: 312px 1fr;
-        grid-template-columns: 150px 1fr;
-      }
+    @include breakpoint(xl) {
+      height: 400px;
+      width: 635px;
     }
   }
+  
+  &__content-image2 {
+    height: 480px;
+    width: 100%;
+    background-image: url("../../assets/mobile/image-grid-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 25px;
+    @include breakpoint(md) {
+      height: 720px;
+      width: 398px;
+      background-image: url("../../assets/tablet/image-grid-2.jpg");
+      grid-area: b;
+    }
+  }
+  
+  &__content-image3 {
+    height: 200px;
+    width: 100%;
+    background-image: url("../../assets/mobile/image-grid-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 25px;
+    @include breakpoint(md) {
+      height: 313px;
+      background-image: url("../../assets/tablet/image-grid-3.jpg");
+      grid-area: a;
+    }
+  }
+
+  &__content-sub-heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  &__block1 {
+    @include breakpoint(lg) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__content-info1 {
+    @include breakpoint(lg) {
+      max-width: 223px;
+    }
+    @include breakpoint(xl) {
+      max-width: 275px;
+    }
+  }
+  
+  &__content-info2 {
+    background-color: $base-color-black;
+    color: $base-color-white;
+    padding: 48px 24px;
+    @include breakpoint(lg) {
+      max-height: 396px;
+      grid-area: c;
+    }
+  }
+
+  &__footer {
+    background-color: $base-color-black;
+    color: $base-color-white;
+    padding: 48px 32px;
+
+    @include breakpoint(lg) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }  
+
+    @include breakpoint(lg) {
+      justify-content: space-around;
+    }
+  }
+
+  &__footer p {
+    @include breakpoint(lg) {
+      padding: 0;
+      max-width: 281px;
+    }
+  }
+
+  &__footer-heading {
+    max-width: 80px;
+  }
+
+  &__socials {
+    @include breakpoint(lg) {
+    display: flex;
+    margin-left: 5px;
+    }
+  }
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &__block2 {
+    @include breakpoint(lg) {
+      display: grid;
+      grid-gap: 12px;
+      width: 100%;
+      grid-template-areas: 
+      "b b a"
+      "b b c"
+      "b b c";
+      grid-template-rows: 312px 1fr;
+      grid-template-columns: 150px 1fr;
+    }
+  }
+}

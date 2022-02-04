@@ -27,38 +27,13 @@ h1 {
   
   p {
     font-family: 'Outfit';
-      font-size: 18px;
-      line-height: 28px;
+    font-size: 18px;
+    line-height: 28px;
     padding: 32px 0;
+
+    @include breakpoint(xl) {
+      font-size: 22px;
+      line-height: 32px;
+    } 
   }
-  
-  // h2 {
-  //   font-family: 'Big Shoulders Display';
-  //   font-size: 70px;
-  //   line-height: 70px;
-  // }
-  
-  // h3 {
-  //   font-family: 'Big Shoulders Display';
-  //   font-size: 60px;
-  //   line-height: 50px;	
-  // }
-  
-  // h4 {
-  //   font-family: 'Big Shoulders Display';
-  //   font-size: 36px;
-  //   line-height: 36px;	
-  // }
-  
-  // @mixin body-md() {
-  // 	font-family: 'Outfit', sans-serif;
-  // 	font-size: 22px;
-  // 	line-height: 32ox;
-  // }
-  
-  // @mixin body-sm() {
-  // 	font-family: 'Outfit', sans-serif;
-  // 	font-size: 18px;
-  // 	line-height: 28px;
-  // }
   

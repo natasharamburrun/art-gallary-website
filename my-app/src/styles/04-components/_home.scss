@@ -47,23 +47,21 @@
   &__hero-banner {
     padding: 0 16px;
     margin: 32px 0;
-
     @include breakpoint(lg) {
       position: absolute;
       max-width: 400px;
       top: 155px;
       right: 15px;
     }
-
     @include breakpoint(xl) {
-      right: 155px;
       display: flex;
-    }
-
-    @include breakpoint(xxl) {
-      right: 299px;
+      right: 0px;
+      left: 0px;
+      justify-content: space-around;
+      max-width: 1440px;
     }
   }
+  
 
   &__hero-title {
     @include breakpoint(xl) {
@@ -90,8 +88,6 @@
 
   &__hero-heading {
       @include breakpoint(xl) {
-      position: absolute;
-      right: 644px;
       max-width: 451px;
       font-size: 96px;
       line-height: 88px;
@@ -106,9 +102,7 @@
 
   &__hero-text-button {
     @include breakpoint(xl) {
-      position: relative;
-      left: 150px;
-      max-width: 350px;
+      max-width: 400px;
     }
   }
   
@@ -212,9 +206,11 @@
   &__content-info1 {
     @include breakpoint(lg) {
       max-width: 223px;
+      padding-right: 20px;
     }
     @include breakpoint(xl) {
       max-width: 275px;
+      padding: 0;
     }
   }
   

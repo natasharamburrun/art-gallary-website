@@ -1,11 +1,14 @@
 import React from 'react';
 import GoTolocation from './HomeButton';
+import LocationMap from './LocationMap';
 
 const Location = () => {
+
   return (
     <section className='location'>
       <GoTolocation />
       <div class="location__image"></div>
+      <LocationMap />
       <div className="location__content">
         <article className='location__content'>
           <h2 className='location__sub-heading'>Our Location</h2>  

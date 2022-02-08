@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](/src/assets/screenshot-homepage.png)
-![](/src/assets/screenshot-location-page.png)
+![](src/assets/screenshot-homepage.png)
+![](src/assets/screenshot-location-page.png)
 
 ## My process
 
@@ -48,24 +48,6 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```css - Used this method to get the black background on hero in the desktop viewpoint.
-
-.homepage__hero::before {
-  @include breakpoint(xl) {
-    content:'';
-    position: absolute;
-    top: 0;
-    right: 700px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    z-index: 0;
-    min-height: 799px;
-    max-height: 800px;
-  }
-}
-```
-
 ```js - I used the useNavigate hook to return a function that lets you navigate programmatically. Passing one value to another.
 const navigate = useNavigate();
 
@@ -81,13 +63,6 @@ const navigate = useNavigate();
 - Page is not responsive beyond 1549px.
 - Add the footer as a reusable component - Did not do this due to the difference in color.
 - Use styled components.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 

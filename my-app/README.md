@@ -26,13 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/screenshot-homepage.png)
-![](./assets/screenshot-location-page.png)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+![](/src/assets/screenshot-homepage.png)
+![](/src/assets/screenshot-location-page.png)
 
 ## My process
 

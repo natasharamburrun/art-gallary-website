@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](src/assets/screenshot-homepage.png)
-![](src/assets/screenshot-location-page.png)
+![homepage](src/assets/screenshot-homepage.png)
+![location page](src/assets/screenshot-location-page.png)
 
 ## My process
 

@@ -7,7 +7,6 @@ const Location = () => {
   return (
     <section className='location'>
       <GoTolocation />
-      <div class="location__image"></div>
       <LocationMap />
       <div className="location__content">
         <article className='location__content'>

@@ -49,24 +49,6 @@
     transform: translate(-50%, -50%);
   }
   
-  &__image {
-    height: 480px;
-    width: 100%;
-    background-image: url("../../assets/mobile/image-map.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    @include breakpoint(lg) {
-      background-image: url("../../assets/tablet/image-map.png");
-     } 
-
-    @include breakpoint(xl) {
-      background-image: url("../../assets/desktop/image-map.png");
-     }  
-  }
-  
   &__street {
     color: $base-color-nude;
     padding-top: 48px;

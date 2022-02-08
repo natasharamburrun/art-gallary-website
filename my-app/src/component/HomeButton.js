@@ -9,7 +9,7 @@ const GoToHomePage = props => {
   }
 
   return (
-    <div>
+    <div className='location__btn'>
       <div className='location__icon'>
         <svg className='location__svg' width="10" height="24" xmlns="http://www.w3.org/2000/svg"onClick={handleClickHomePage}><path stroke="#FFF" fill="none" d="M9 24 1 12 9 0"/></svg>  
       </div>

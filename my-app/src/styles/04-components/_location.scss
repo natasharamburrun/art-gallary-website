@@ -5,6 +5,7 @@
     color: $base-color-white;
     @include breakpoint(lg) {
       display: flex;
+      justify-content: space-around;
     }
   }
 
@@ -26,7 +27,7 @@
   &__btn {
     @include breakpoint(xl) {
       position: absolute;
-      left: 50px;
+      left: 100px;
     }
   }
 
@@ -56,6 +57,12 @@
     @include breakpoint(lg) {
      padding: 0;
     }  
+  }
+
+  &__commentry {
+    @include breakpoint(lg) {
+      max-width: 540px;
+     } 
   }
 
   &__footer {

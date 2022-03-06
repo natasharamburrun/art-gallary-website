@@ -7,7 +7,6 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "favicons-webpack-plugin": "^5.0.2",
     "history": "^5.2.0",
     "leaflet": "^1.7.1",
     "react": "^17.0.2",
@@ -45,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "@types/leaflet": "^1.7.9"
+    "@types/leaflet": "^1.7.9",
+    "favicons-webpack-plugin": "^5.0.2",
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }

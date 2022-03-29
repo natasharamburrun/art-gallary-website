@@ -101,7 +101,7 @@
     }
   }
 
-  &__hero-text-button {
+  &__hero-text-and-button {
     @include breakpoint(xl) {
       max-width: 400px;
     }
